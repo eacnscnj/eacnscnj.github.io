@@ -73,6 +73,10 @@ GitHub与git的关系就像p ***与 p ***hub。作为世界上最著名的远程
 建议：直接看
 
 内容：C, Python, SQL, HTML, CSS, JavaScript等语言的简单入门，其中C语言篇尤其推荐。
+### 5.C++那些事
+
+GitHub的一个32k star的项目，地址如下：https://github.com/Light-City/CPlusPlusThings
+这是一个研一开始学c++的大佬总结的从初学者开始学习c++的教程，对只知道c with cin/cout的人来说大有脾益，你也可以从中看出c++和c确实很像。
 
 [^1]: 写于2023年7月
 [^2]: 既“计算机专业消失的一学期”
