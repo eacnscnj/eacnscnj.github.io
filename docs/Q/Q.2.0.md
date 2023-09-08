@@ -80,5 +80,17 @@ GitHub与git的关系就像p ***与 p ***hub。作为世界上最著名的远程
 GitHub的一个32k star的项目，地址如下：https://github.com/Light-City/CPlusPlusThings
 这是一个研一开始学c++的大佬总结的从初学者开始学习c++的教程，对只知道c with cin/cout的人来说大有脾益，你也可以从中看出c++和c确实很像。
 
+### 6.著名大学计算机课程合集
+
+链接：https://github.com/Developer-Y/cs-video-courses
+
+内容：收录了计算机科学各方面的著名大学的课程，量大管饱学到昏厥。
+
+### 7.英语怎么学
+
+英语是计算机最重要的语言，不会英语你将错过大部分优质课程与材料以及互联网的绝大部分内容，这个项目不仅帮助你学英语，还会让你认识到，学英语没有捷径。
+
+链接：https://github.com/yujiangshui/A-Programmers-Guide-to-English
+
 [^1]: 写于2023年7月
 [^2]: 既“计算机专业消失的一学期”
