@@ -45,6 +45,8 @@ GitHub与git的关系就像p ***与 p ***hub。作为世界上最著名的远程
 ### 7.ChatGpt或New Bing
 
 当下最火热的AI工具，无需多言，你最好的最博学的老师
+### 8.Deepl
+一个方便且不错的翻译软件，由于推荐的课程和文档大多为英文而大部分人，比如我，英语都只有四级水平这种胎教水平，所以需要依靠这种软件来进行一些长难句翻译之类的
 
 ## 3.自学集合
 
@@ -72,7 +74,7 @@ GitHub与git的关系就像p ***与 p ***hub。作为世界上最著名的远程
 
 建议：直接看
 
-内容：C, Python, SQL, HTML, CSS, JavaScript等语言的简单入门，其中C语言篇尤其推荐。
+内容：哈佛大学的C, Python, SQL, HTML, CSS, JavaScript等语言的简单入门，其中C语言篇尤其推荐。
 ### 5.C++那些事
 
 GitHub的一个32k star的项目，地址如下：https://github.com/Light-City/CPlusPlusThings
