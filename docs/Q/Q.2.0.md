@@ -54,9 +54,11 @@ GitHub与git的关系就像p ***与 p ***hub。作为世界上最著名的远程
 
 ### 1.MIT的missing-semester
 
-神课
+课程观看地点：b站
 
-如果学完之后想深入了解Linux，去看UCB的Sysadmin DeCal
+内容：linux基础，shell入门，了解makefile，git等等你将会用到的各种工具大合集，我们学校是不可能有这种课程的
+
+如果学完之后想深入了解Linux，可以去看UCB的Sysadmin DeCal
 
 ### 2.CS106L
 
@@ -70,17 +72,17 @@ GitHub与git的关系就像p ***与 p ***hub。作为世界上最著名的远程
 
 课程观看地点：有条件就去油管看，b站翻译的真烂。
 
-内容：这不仅仅是一门编程语言课，而是会深入到程序构造与运行的原理。你将会入门 Python、Scheme 和 SQL 这三种编程语言。
+内容：这不仅仅是一门编程语言课，而是会深入到程序构造与运行的原理，是培养计算机思维的优秀课程。你将会入门 Python、Scheme 和 SQL 这三种编程语言。
 
 ### 4.CS50
 
-建议：直接看
+课程观看地点：油管有最新的，b站有精品翻译
 
-内容：哈佛大学的C, Python, SQL, HTML, CSS, JavaScript等语言的简单入门，其中C语言篇尤其推荐。
+内容：哈佛大学的C, Python, SQL, HTML, CSS, JavaScript等语言的简单入门，其中C语言篇尤其推荐，大卫老师也是个节奏把控的高手，作业则精品且入门。
 ### 5.C++那些事
 
-GitHub的一个32k star的项目，地址如下：https://github.com/Light-City/CPlusPlusThings
-这是一个研一开始学c++的大佬总结的从初学者开始学习c++的教程，对只知道c with cin/cout的人来说大有脾益，你也可以从中看出c++和c确实很像。
+链接：https://github.com/Light-City/CPlusPlusThings
+这是一个研一开始学c++的大佬总结的从初学者开始学习c++的教程，对只知道c with cin/cout的人来说大有脾益，建议学完CS106L后进阶使用。
 
 ### 6.著名大学计算机课程合集
 
@@ -100,9 +102,9 @@ GitHub的一个32k star的项目，地址如下：https://github.com/Light-City/
 
 在学习这门课程前，希望你能掌握一门面向对象的语言，最好是Java。
 
-该课程中你会学到前端三大件（HTML，CSS，JavaScript）与react这个主流框架，与该课程类似的还有MIT Web Development Crash Course，但是我并不推荐，过于速成，很多地方讲得不太清楚。
+该课程中你会学到前端三大件（HTML，CSS，JavaScript）与react这个主流框架，还有一些设计相关内容，与该课程类似的还有MIT Web Development Crash Course，但是我并不推荐，过于速成，很多地方讲得不太清楚。
 
-这门课程还有一个优势就是你可以在他们课程网站上听到最新的课程而不是几年前的，而且作业评测也是开放的。
+这门课程还有一个优势就是你可以在他们课程网站上听到最新的课程而不是几年前的，感动，而且作业评测也是开放的。
 
 我在学习该课程中的课程作业与笔记在我的GitHub仓库[eacnscnj/CS571-23-Fall (github.com)](https://github.com/eacnscnj/CS571-23-Fall)中
 
