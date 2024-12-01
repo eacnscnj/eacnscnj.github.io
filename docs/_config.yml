@@ -2,7 +2,7 @@ title: DLMU CS saving note
 lang: en
 description: a catchy description for your project
 
-remote_theme: rundocs/jekyll-rtd-theme
+remote_theme: rundocs/jekyll-rtd-theme@main
 
 readme_index:
   with_frontmatter: true
