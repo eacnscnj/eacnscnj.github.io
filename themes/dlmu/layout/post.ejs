@@ -1,0 +1,18 @@
+<article class="article">
+  <header class="article-head">
+    <div class="crumb">
+      <a href="<%- url_for('/') %>">首页</a>
+      <% if (page.categories && page.categories.length) { %>
+        <span>/</span><span><%= page.categories.data[0].name %></span>
+      <% } %>
+    </div>
+    <h1><%= page.title %></h1>
+    <div class="meta">
+      <span><%= config.author %></span>
+      <span><%= date(page.date, 'YYYY 年 MM 月 DD 日') %></span>
+      <% if (page.updated) { %><span>更新于 <%= date(page.updated, 'YYYY-MM-DD') %></span><% } %>
+      <% if (page.categories && page.categories.length) { %><span># <%= page.categories.data.map(function (cat) { return cat.name; }).join(' / ') %></span><% } %>
+    </div>
+  </header>
+  <div class="article-body" id="article-body"><%- page.content %></div>
+</article>

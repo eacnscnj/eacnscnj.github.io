@@ -1,0 +1,20 @@
+avatar_text: CS
+profile:
+  name: eacnscnj
+  bio: 大连海事大学计算机求生指北
+menu:
+  首页: /
+  序: /categories/序/
+  破: /categories/破/
+  Q: /categories/Q/
+  终: /categories/终/
+github: https://github.com/eacnscnj/eacnscnj.github.io
+sections:
+  - name: 序
+    desc: 入学认知、校园生活与生存原则
+  - name: 破
+    desc: 课程、绩点、分流、竞赛与设备
+  - name: Q
+    desc: 计算机自学路线、工具链与资源合集
+  - name: 终
+    desc: 实习就业、考研保研与毕业复盘

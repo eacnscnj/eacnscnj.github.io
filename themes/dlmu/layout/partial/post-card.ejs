@@ -1,0 +1,5 @@
+<a class="post-card" href="<%- url_for(post.path) %>">
+  <strong><%= post.title %></strong>
+  <span><%= date(post.date, 'YYYY-MM-DD') %></span>
+  <% if (post.excerpt) { %><p><%- strip_html(post.excerpt).substring(0, 120) %></p><% } %>
+</a>

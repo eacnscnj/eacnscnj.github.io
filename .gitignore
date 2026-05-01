@@ -1,0 +1,9 @@
+node_modules/
+public/
+.deploy_git/
+db.json
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

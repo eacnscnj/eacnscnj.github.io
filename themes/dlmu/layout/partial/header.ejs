@@ -1,0 +1,8 @@
+<header class="topbar">
+  <a class="brand" href="<%- url_for('/') %>"><span class="prompt">&gt;_</span><%= config.subtitle || config.title %></a>
+  <div class="search">
+    <input id="site-search" type="search" placeholder="搜索（Ctrl + K）" autocomplete="off">
+    <div id="search-results" class="search-results" hidden></div>
+  </div>
+  <% if (theme.github) { %><a class="github-link" href="<%= theme.github %>">GitHub</a><% } %>
+</header>

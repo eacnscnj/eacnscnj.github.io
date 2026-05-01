@@ -1,0 +1,11 @@
+<article class="article">
+  <header class="article-head">
+    <div class="crumb"><a href="<%- url_for('/') %>">首页</a><span>/</span><span>标签</span></div>
+    <h1><%= page.tag || '标签' %></h1>
+  </header>
+  <section class="article-list">
+    <% page.posts.each(function (post) { %>
+      <%- partial('partial/post-card', { post: post }) %>
+    <% }) %>
+  </section>
+</article>

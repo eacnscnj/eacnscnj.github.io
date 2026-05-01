@@ -1,0 +1,18 @@
+<aside class="rightbar">
+  <section class="panel">
+    <h2>文章目录</h2>
+    <nav id="toc" class="toc"></nav>
+  </section>
+  <section class="panel">
+    <h2>最近文章</h2>
+    <% site.posts.sort('-date').toArray().slice(0, 6).forEach(function (post) { %>
+      <a class="recent" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <% }) %>
+  </section>
+  <section class="panel">
+    <h2>文章标签</h2>
+    <% site.tags.sort('name').toArray().slice(0, 24).forEach(function (tag) { %>
+      <a class="tag" href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+    <% }) %>
+  </section>
+</aside>

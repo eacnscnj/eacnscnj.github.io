@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="<%= config.language || 'zh-CN' %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><% if (page.title) { %><%= page.title %> | <% } %><%= config.title %></title>
+  <meta name="description" content="<%= page.description || config.description || '' %>">
+  <%- css('css/site') %>
+</head>
+<body>
+  <%- partial('partial/header') %>
+  <div class="shell">
+    <%- partial('partial/sidebar') %>
+    <main class="content"><%- body %></main>
+    <%- partial('partial/rightbar') %>
+  </div>
+  <script id="search-data" type="application/json"><%- JSON.stringify(site.posts.sort('-date').toArray().map(function (post) { return { title: post.title, url: url_for(post.path) }; })) %></script>
+  <%- js('js/site') %>
+</body>
+</html>

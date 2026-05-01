@@ -1,0 +1,19 @@
+<aside class="sidebar">
+  <a class="avatar" href="<%- url_for('/') %>" aria-label="<%= config.title %>"><span><%= theme.avatar_text || 'CS' %></span></a>
+  <div class="profile">
+    <strong><%= theme.profile && theme.profile.name ? theme.profile.name : config.author %></strong>
+    <p><%= theme.profile && theme.profile.bio ? theme.profile.bio : config.description %></p>
+  </div>
+
+  <nav class="site-nav" aria-label="主导航">
+    <% Object.keys(theme.menu || {}).forEach(function (name) { %>
+      <a href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
+    <% }) %>
+    <section>
+      <span class="section-title">分类</span>
+      <% site.categories.sort('name').each(function (cat) { %>
+        <a class="child-link" href="<%- url_for(cat.path) %>"><%= cat.name %><em><%= cat.length %></em></a>
+      <% }) %>
+    </section>
+  </nav>
+</aside>
