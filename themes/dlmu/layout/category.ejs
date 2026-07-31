@@ -8,4 +8,7 @@
       <%- partial('partial/post-card', { post: post }) %>
     <% }) %>
   </section>
+  <% if (page.total > 1) { %>
+    <%- paginator({ show_all: false, end_size: 1, mid_size: 1 }) %>
+  <% } %>
 </article>

@@ -12,7 +12,7 @@ source/_posts/
   final/    # 终：实习就业、考研保研、毕业复盘、后续补充
 ```
 
-`docs/` 是旧站点内容的保留目录，不再作为日常更新入口。
+`archive/docs/` 是旧 Jekyll 站点内容的归档，仅作历史保留，不再维护；日常更新一律走 `source/_posts/`。
 
 ## 新增文章
 
@@ -70,8 +70,4 @@ npm run server
 npm run build
 ```
 
-部署到 GitHub Pages：
-
-```bash
-npm run deploy
-```
+部署到 GitHub Pages：推送 `main` 分支即可，仓库内的 GitHub Actions 工作流会自动构建并发布，不需要手动部署。

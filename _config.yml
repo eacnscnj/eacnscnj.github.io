@@ -1,10 +1,10 @@
 title: 大连海事大学计算机求生指北
-subtitle: DLMU CS saving note
+subtitle: DLMU CS survival note
 description: 一份由在校生整理的 DLMU 计算机类求生笔记
 keywords: DLMU, 计算机, 自学, 课程攻略, 新生指南
 author: eacnscnj
 language: zh-CN
-timezone: Asia/Hong_Kong
+timezone: Asia/Shanghai
 
 url: https://eacnscnj.github.io
 root: /
@@ -39,17 +39,31 @@ index_generator:
   per_page: 10
   order_by: -date
 
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+
+category_generator:
+  per_page: 10
+
+tag_generator:
+  per_page: 10
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:
+  path: sitemap.xml
+
 default_category: 未分类
 category_map:
 tag_map:
 
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-updated_option: mtime
+updated_option: date
 
 theme: dlmu
-
-deploy:
-  type: git
-  repo: git@github.com:eacnscnj/eacnscnj.github.io.git
-  branch: main

@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><% if (page.title) { %><%= page.title %> | <% } %><%= config.title %></title>
   <meta name="description" content="<%= page.description || config.description || '' %>">
+  <meta name="keywords" content="<%= config.keywords || '' %>">
+  <link rel="canonical" href="<%= page.permalink || config.url %>">
+  <link rel="icon" type="image/svg+xml" href="<%- url_for('favicon.svg') %>">
+  <link rel="alternate" type="application/atom+xml" title="<%= config.title %>" href="<%- url_for('atom.xml') %>">
+  <meta property="og:site_name" content="<%= config.title %>">
+  <meta property="og:title" content="<%= page.title || config.title %>">
+  <meta property="og:description" content="<%= page.description || config.description || '' %>">
+  <meta property="og:type" content="<%= page.layout === 'post' ? 'article' : 'website' %>">
+  <meta property="og:url" content="<%= page.permalink || config.url %>">
+  <meta name="twitter:card" content="summary">
   <%- css('css/site') %>
 </head>
 <body>
@@ -14,7 +24,7 @@
     <main class="content"><%- body %></main>
     <%- partial('partial/rightbar') %>
   </div>
-  <script id="search-data" type="application/json"><%- JSON.stringify(site.posts.sort('-date').toArray().map(function (post) { return { title: post.title, url: url_for(post.path) }; })) %></script>
+  <script id="search-data" type="application/json"><%- JSON.stringify(site.posts.sort('-date').toArray().map(function (post) { return { title: post.title, url: url_for(post.path), content: (post.content ? strip_html(post.content).replace(/\s+/g, ' ') : '').substring(0, 500) }; })) %></script>
   <%- js('js/site') %>
 </body>
 </html>

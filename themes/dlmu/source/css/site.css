@@ -422,22 +422,33 @@ a {
 
 @media (max-width: 760px) {
   .topbar {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     height: auto;
     gap: 10px;
     padding: 10px;
   }
 
-  .brand,
-  .github-link {
+  .brand {
     padding: 0;
     margin: 0;
     justify-self: start;
   }
 
+  .nav-toggle {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
   .search {
+    grid-column: 1 / -1;
     max-width: none;
     width: 100%;
+  }
+
+  .github-link {
+    justify-self: start;
+    margin: 0;
   }
 
   .shell {
@@ -445,10 +456,15 @@ a {
   }
 
   .sidebar {
+    display: none;
     position: static;
     height: auto;
     border-right: 0;
     border-bottom: 1px solid var(--line);
+  }
+
+  .nav-open .sidebar {
+    display: block;
   }
 
   .avatar {
@@ -469,4 +485,215 @@ a {
   .guide-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* 导航开关（桌面端隐藏，移动端显示） */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--muted);
+}
+
+.nav-toggle:hover span {
+  background: var(--accent-strong);
+}
+
+/* 搜索结果：标题 + 摘要 */
+.search-results strong {
+  display: block;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.search-results .snippet {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.search-results .empty {
+  display: block;
+  padding: 12px 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* 分页 */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.pagination a,
+.pagination .page-number {
+  min-width: 34px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.pagination a:hover {
+  border-color: #415467;
+  color: var(--accent-strong);
+}
+
+.pagination .page-number.current {
+  border-color: #415467;
+  background: var(--panel-soft);
+  color: var(--accent-strong);
+}
+
+.pagination .space {
+  padding: 6px 2px;
+  color: var(--muted);
+}
+
+/* 代码块：highlight.js 深色主题 + 行号栏 */
+.article-body pre {
+  background: var(--code);
+}
+
+.article-body pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.article-body figure.highlight {
+  overflow: auto;
+  margin: 18px 0;
+  border-radius: 6px;
+  background: var(--code);
+}
+
+.article-body figure.highlight table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.article-body figure.highlight .gutter {
+  padding: 0;
+  border-right: 1px solid #1f2937;
+  background: #0d1420;
+  user-select: none;
+}
+
+.article-body figure.highlight .gutter pre {
+  padding: 18px 12px;
+  color: #4b5563;
+  text-align: right;
+}
+
+.article-body figure.highlight .code {
+  padding: 0;
+  vertical-align: top;
+}
+
+.article-body figure.highlight .code pre {
+  overflow: visible;
+  padding: 18px 20px;
+}
+
+.article-body figure.highlight pre {
+  margin: 0;
+  background: transparent;
+}
+
+.article-body figure.highlight code.hljs {
+  padding: 0;
+  background: transparent;
+}
+
+.hljs {
+  color: #d1d9e1;
+  background: transparent;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-type,
+.hljs-doctag,
+.hljs-name,
+.hljs-tag,
+.hljs-deletion {
+  color: #f97583;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-template-tag {
+  color: #9ecbff;
+}
+
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #79b8ff;
+}
+
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.function_,
+.hljs-section,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #ffab70;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-params,
+.hljs-subst {
+  color: #e8eef5;
+}
+
+.hljs-meta {
+  color: #79b8ff;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
 }
